@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #2f9041;
     color: white;
     padding: 10px 20px;
 }
@@ -78,26 +78,38 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #2f9041;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
-.footer-icons img {
-    height: 24px;
-    margin-left: 15px;
-}
-
-.if-logo {
-    height: 40px;
+.footer-icons {
+    display: flex;
+    gap: 15px;
 }
 
 .footer-icons a {
     color: white;
-    margin-left: 15px;
     font-size: 24px;
+    transition: color 0.3s;
 }
 
 .footer-icons a:hover {
     color: #ddd;
+}
+
+.footer-info {
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.if-logo {
+    height: 100px;
+    margin-left: 20px;
 }
