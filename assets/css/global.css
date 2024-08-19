@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,10 +25,11 @@ header {
     font-size: 18px;
     text-align: center;
     flex-grow: 1;
+    margin-left: 30px;
 }
 
 .logo {
-    height: 50px;
+    height: 80px;
 }
 
 main {
@@ -100,16 +101,49 @@ footer {
 }
 
 .footer-info {
-    text-align: center;
+    text-align: right;
     flex-grow: 1;
-    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .footer-info p {
-    margin: 5px 0;
+    margin: 5px 0px;
+    font-size: small;
+}
+
+.footer-logo img {
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .if-logo {
     height: 100px;
     margin-left: 20px;
+}
+
+.map {
+    margin-right: 20px;
+}
+
+/* Estilos para o rodapé em telas menores que 945 pixels */
+@media (max-width: 995px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info {
+        display: none;
+    }
+
+    .map {
+        margin-right: 0px;
+    }
+
+    .footer-logo,
+    .footer-icons,
+    iframe {
+        margin-bottom: 10px;
+    }
 }
