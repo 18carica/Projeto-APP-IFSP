@@ -1,6 +1,5 @@
 /* faz com que o menu fique a frente do carrosel*/
 nav{
-    
     z-index: 2;
     margin-top: -20px;
     width: 60px;
@@ -83,7 +82,7 @@ nav{
 
 .navbar .menu-items {
   margin-top: -10px;
-  padding-top: 120px;
+  padding-top: 80px;
   background-color: rgb(200, 200, 200);
   height: 100vh;
   width: 100%;
@@ -95,6 +94,9 @@ nav{
   padding-right: 200px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
+  position: sticky;
+  top: 0;
+  
 }
 
 /*itens do menu */ 
