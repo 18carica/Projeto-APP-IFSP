@@ -204,7 +204,7 @@ transform: rotate(-45deg);
   cursor: pointer;
   text-decoration: none; /* Remove sublinhado do link */
   margin-top: 5px;
-  margin-left: -35px; /* Espaço entre o texto e o ícone */
+  margin-left: -32px; /* Espaço entre o texto e o ícone */
 }
 
 .chevron-link i {
