@@ -1,0 +1,212 @@
+/* faz com que o menu fique a frente do carrosel*/
+nav{
+  z-index: 2;
+  margin-top: -20px;
+  width: 60px;
+}
+
+
+.nav-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 62px;
+}
+
+.navbar {
+margin-top: 20px;
+}
+
+.navbar .menu-items {
+display: flex;
+}
+
+.navbar .nav-container li {
+list-style: none;
+}
+
+
+.navbar .nav-container a {
+text-decoration: none;
+color: #ffffff;
+font-weight: 500;
+font-size: 1.1rem;
+padding: 10px 7px;
+margin-left: 0px;
+margin-top: 7px;
+width: 100%;
+}
+
+.navbar .nav-container li:hover{
+  background-color: #339445;
+}
+
+.nav-container {
+display: block;
+position: relative;
+height: 60px;
+}
+
+.nav-container .checkbox {
+position: absolute;
+display: block;
+height: 32px;
+width: 32px;
+top: 20px;
+left: 20px;
+z-index: 10;
+opacity: 0;
+cursor: pointer;
+}
+
+/* Linhas do Hamburgunho */
+
+.nav-container .hamburger-linhas {
+
+display: block;
+height: 26px;
+width: 32px;
+position: absolute;
+top: 17px;
+left: 20px;
+z-index: 2;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.nav-container .hamburger-linhas .linha {
+display: block;
+height: 4px;
+width: 100%;
+border-radius: 10px;
+background: #ffffff;
+}
+
+
+
+/*menu aberto*/
+
+.navbar .menu-items {
+margin-top: -20px;
+padding-top: 110px;
+background-color: #258837f9;
+height: 100vh;
+width: 100%;
+transform: translate(-150%);
+display: flex;
+flex-direction: column;
+margin-left: -85px;
+padding-left: 50px;
+padding-right: 205px;
+transition: transform 0.5s ease-in-out;
+text-align: center;
+position: sticky;
+top: 0;
+align-items: flex-start;
+}
+
+/*itens do menu */ 
+
+.navbar .menu-items li {
+display: flex;
+font-size: 1.8rem;
+font-weight: 500;
+width: 205px; 
+height: 60px;
+}
+
+/*Transição, o efeito de quando clica no hamburguer e vira o X, e faz o menu aparecer*/ 
+
+.nav-container .hamburger-linhas .linha1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-linhas .linha2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-linhas .linha3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-linhas .linha1 {
+transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-linhas .linha2 {
+transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-linhas .linha3 {
+transform: rotate(-45deg);
+}
+
+/* Submenu inicial */
+.submenu {
+  font-size: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* Esconde o submenu inicialmente */
+  background-color: #257f35;
+  position: absolute;
+  top: 60px; /* Ajusta para aparecer logo abaixo do item "Nossos Cursos" */
+  left: 0;
+  width: 205px; /* Define a largura do submenu */
+  z-index: 1000; /* Garante que o submenu fique na frente de outros elementos */
+  border-radius: 5px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.125);
+}
+
+/* Estilos dos itens do submenu */
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 15px;
+  display: block;
+}
+
+
+/* Exibir o submenu quando o item pai for clicado */
+.show-submenu .submenu {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+/* Transição suave para o submenu */
+.submenu {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Estilização do item "Nossos Cursos" */
+.nossos-cursos {
+  position: relative;
+}
+
+/* Torna o link do ícone clicável */
+.chevron-link {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; /* Remove sublinhado do link */
+  margin-top: 5px;
+  margin-left: -32px; /* Espaço entre o texto e o ícone */
+}
+
+.chevron-link i {
+  font-size: 1.2rem; /* Tamanho do ícone */
+}
