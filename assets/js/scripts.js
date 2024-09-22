@@ -30,3 +30,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+// Seleciona o item "Nossos Cursos" e o ícone
+const nossosCursos = document.querySelector('.nossos-cursos > a');
+const chevronIcon = document.getElementById('chevron-icon');
+const chevronLink = document.querySelector('.chevron-link');
+
+// Função para alternar o submenu e o ícone
+function toggleMenu() {
+  const parentLi = nossosCursos.parentElement;
+
+  // Alterna a classe para exibir ou ocultar o submenu
+  parentLi.classList.toggle('show-submenu');
+
+  // Alterna o ícone de chevron
+  if (parentLi.classList.contains('show-submenu')) {
+    chevronIcon.classList.remove('bi-chevron-down');
+    chevronIcon.classList.add('bi-chevron-up');
+  } else {
+    chevronIcon.classList.remove('bi-chevron-up');
+    chevronIcon.classList.add('bi-chevron-down');
+  }
+}
+
+// Adiciona o evento de clique ao item "Nossos Cursos" e ao ícone
+nossosCursos.addEventListener('click', function (e) {
+  e.preventDefault(); // Evita o comportamento padrão do link
+  toggleMenu();
+});
+
+chevronLink.addEventListener('click', function (e) {
+  e.preventDefault(); // Evita o comportamento padrão do link
+  toggleMenu();
+});
+
