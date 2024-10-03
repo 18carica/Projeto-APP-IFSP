@@ -80,7 +80,7 @@ button.next {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza horizontalmente os itens */
     align-items: center;
     background-color: #2f9041;
     color: white;
@@ -89,6 +89,11 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    text-align: center; /* Centraliza o texto dentro do footer */
+}
+
+footer p {
+    align-items: center;
 }
 
 .footer-icons {
