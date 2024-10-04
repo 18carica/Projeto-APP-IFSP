@@ -93,10 +93,10 @@ background: #ffffff;
 /*menu aberto*/
 
 .navbar .menu-items {
-margin-top: -20px;
+margin-top: -40px;
 padding-top: 110px;
 background-color: #258837f9;
-height: 100vh;
+height: 110vh;
 width: 100%;
 transform: translate(-150%);
 display: flex;

@@ -1,5 +1,11 @@
+/* 
+---------------------------------------------
+Gerais
+--------------------------------------------- 
+*/
+
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,7 +22,9 @@ header {
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+    height: 120px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .menu-icon {
@@ -42,16 +50,29 @@ main {
     padding-top: 120px;
 }
 
+li {
+    cursor: pointer; /* Mantém o cursor como pointer apenas para os botões */
+}
+
+/* 
+---------------------------------------------
+Carrossel
+--------------------------------------------- 
+*/
+
 .carousel {
     position: relative;
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 1600px;
+    max-height: 500px;
+    margin: 10px auto 40px;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    filter: brightness(0.5); /* Dá uma escurecida bacana nas imagens do carrossel */
 }
 
 .carousel-images img {
@@ -63,8 +84,8 @@ button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: #2f9041;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -72,11 +93,283 @@ button.prev, button.next {
 
 button.prev {
     left: 0;
+    border-radius: 0px 10px 10px 0px;
 }
 
 button.next {
     right: 0;
+    border-radius: 10px 0px 0px 10px;
 }
+
+.carousel-text {
+    position: absolute;
+    top: 51%; /* Ajuste para uma posição superior */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+    color: white; /* Cor do texto */
+    text-align: center;
+    z-index: 1; /* Garante que o texto fique acima do carrossel */
+    width: 90%; /* Largura responsiva */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.carousel-text h2 {
+    font-size: 4vw; /* Tamanho padrão */
+}
+
+.carousel-text p {
+    font-size: 2.5vw; /* Tamanho padrão */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .carousel-text h2 {
+        font-size: 6vw; /* Aumenta o tamanho em telas pequenas */
+    }
+
+    .carousel-text p {
+        font-size: 4vw; /* Aumenta o tamanho em telas pequenas */
+    }
+}
+
+/* 
+---------------------------------------------
+Serviços do Site
+--------------------------------------------- 
+*/
+
+.services .service-item:hover .icon img {
+    margin-top: -10px;
+  }
+  
+  .services .service-item {
+    position: relative;
+    margin-top: 95px;
+  }
+  
+  .services .service-item .icon {
+    width: 190px;
+    height: 190px;
+    display: inline-block;
+    text-align: center;
+    line-height: 190px;
+    background-color: #2f9041;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -95px;
+  }
+  
+  .services .service-item .icon img {
+    max-width: 86px;
+    transition: all .2s;
+  }
+  
+  .services .service-item .main-content {
+    border-radius: 25px;
+    padding: 80px 30px 50px 30px;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    transition: all .4s;
+  }
+  
+  .services .service-item h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 30px;
+    transition: all .4s;
+  }
+  
+  .services .service-item p {
+    color: #4a4a4a;
+    margin-bottom: 25px;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .main-button a {
+    display: inline-block;
+    background-color: #fff;
+    color: #2f9041;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 25px;
+    border-radius: 20px;
+    transition: all .3s;
+  }
+  
+  .main-button a:hover {
+    background-color:#2f9041;
+    color: #fff;
+  }
+
+/* 
+---------------------------------------------
+Cursos
+--------------------------------------------- 
+*/
+
+.section-courses {
+    margin-top: 20px;
+    background-color: #62af60;
+    width: 94,5%;
+    height: auto;
+    padding: 60px 0px 80px 0px;
+    border-radius: 150px 0px 0px 150px;
+    margin-left: 50px;
+}
+
+.section-heading h2 {
+    color: white;
+}
+
+.section-heading h6 {
+    color: white;
+}
+
+.courses {
+    margin-top: 160px;
+}
+  
+.event_filter {
+    text-align: center;
+}
+  
+.event_filter {
+    background-color: #f1f0fe;
+    border-radius: 50px;
+    padding: 15px 40px;
+    list-style: none;
+    margin: 0 auto 70px;
+    max-width: max-content;
+}
+  
+.event_filter li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+  
+.event_filter li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e1e1e;
+    transition: all .3s;
+}
+  
+.event_filter li
+  
+.event_filter li a.is_active,
+.event_filter li a:hover {
+    color: #2e883d;
+}  
+
+.events_item .thumb {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+  
+.events_item .thumb img {
+    margin-bottom: -5px;
+    width: 100%;
+}
+  
+.events_item .thumb span.category {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2f9041;
+    background-color: rgba(250, 250, 250, 0.95);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    display: inline-block;
+}
+  
+.events_item .thumb span.ponto {
+    position: absolute;
+    right: -30px;
+    top: -50px;
+    background-color:#c40000;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all .3s;
+}
+  
+.events_item .thumb span.ponto h6 {
+    margin-top: 72px;
+    margin-left: 22px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+  
+.events_item .thumb span.ponto em {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    vertical-align: top;
+}
+  
+.events_item {
+    background-color: #f1f0fe;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} 
+  
+.events_item .down-content {
+    padding: 20px 30px 25px 30px;
+}
+  
+.events_item .down-content span.short {
+    color: #43994a;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+  
+.events_item .down-content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    transition: all .3s;
+}
+  
+.events_item:hover .down-content h4 {
+    color: #3b9246;
+}
+  
+.events_item:hover .thumb span.ponto {
+    transform: scale(1.2);
+}
+
+/* Media query para telas menores */
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .section-courses {
+        height: 110vh;
+    }
+}
+
+/* 
+---------------------------------------------
+Rodapé
+--------------------------------------------- 
+*/
 
 footer {
     display: flex;
@@ -90,6 +383,8 @@ footer {
     left: 0;
     width: 100%;
     text-align: center; /* Centraliza o texto dentro do footer */
+    bottom: 0;
+    border-radius: 20px 20px 0px 0px;
 }
 
 footer p {
