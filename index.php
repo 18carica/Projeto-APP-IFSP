@@ -13,10 +13,10 @@ include "./includes/general_tags.php";
     <link rel='stylesheet' href='./assets/css/hamburguer.css'>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Work Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -71,22 +71,183 @@ include "./includes/general_tags.php";
 
     <!-- Conteúdo Principal -->
     <main>
-        <h1>Bem-vindo à Página</h1>
-        <p>Este é um exemplo de uma página com cabeçalho e rodapé globais.</p>
-
+        
         <!-- Carrossel de Imagens -->
         <div class="carousel">
             <div class="carousel-images">
-                <img src="img/image1.jpg" alt="Imagem 1">
-                <img src="img/image2.jpg" alt="Imagem 2">
-                <img src="img/image3.jpg" alt="Imagem 3">
+                <img src="img/fotosIF/predio1fora-8.JPG" alt="Imagem 1">
+                <img src="img/fotosIF/biblioteca-2.jpg" alt="Imagem 2">
+                <img src="img/fotosIF/labInformatica-1.JPG" alt="Imagem 3">
+                <img src="img/fotosIF/corredor-1.JPG" alt="Imagem 4">
             </div>
             <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
             <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+            <!-- Texto em cima do carrossel -->
+            <div class="carousel-text">
+                <h2>Bem-vindo ao IF na Mão!</h2>
+                <p>Aqui você poderá explorar cursos, instalações, e muito mais do IFSP de Campos do Jordão.</p>
+            </div>
         </div>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="services section" id="services">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="icon">
+                    <img src="img/service-01.png" alt="online degrees">
+                    </div>
+                    <div class="main-content">
+                    <h4>Teste</h4>
+                    <p>Testinho.</p>
+                    <div class="main-button">
+                        <a href="#">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="icon">
+                    <img src="img/service-02.png" alt="short courses">
+                    </div>
+                    <div class="main-content">
+                    <h4>Teste</h4>
+                    <p>Testinho.</p>
+                    <div class="main-button">
+                        <a href="#">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="icon">
+                    <img src="img/service-03.png" alt="web experts">
+                    </div>
+                    <div class="main-content">
+                    <h4>Teste</h4>
+                    <p>Testinho.</p>
+                    <div class="main-button">
+                        <a href="#">Read More</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </main>
+    
+    <section class="section-courses" id="courses" >
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            <div class="section-heading">
+                <h6>Cursos</h6>
+                <h2>Alguns dos cursos disponíveis</h2>
+            </div>
+            </div>
+        </div>
+        <ul class="event_filter">
+            <li>
+            <a class="is_active" href="./system/tecnicos.php">Técnicos</a>
+            </li>
+            <li>
+            <a href="./system/tecnicos-integrados.php">Técnicos Integrados</a>
+            </li>
+            <li>
+            <a href="./system/superiores.php">Superiores</a>
+            </li>
+            <li>
+            <a href="./system/extensao.php">Cursos de Extensão</a>
+            </li>
+        </ul>
+        <div class="row event_box">
+            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+                <div class="thumb">
+                <a href="#"><img src="img/image1.jpg" alt=""></a>
+                <span class="category">Teste</span>
+                <span class="ponto"></span>
+                </div>
+                <div class="down-content">
+                <span class="short">Testinho</span>
+                <h4>Testão</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+                <div class="thumb">
+                <a href="#"><img src="img/image1.jpg" alt=""></a>
+                <span class="category">Teste</span>
+                <span class="ponto"></span>
+                </div>
+                <div class="down-content">
+                <span class="short">Testinho</span>
+                <h4>Testão</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+                <div class="thumb">
+                <a href="#"><img src="img/image1.jpg" alt=""></a>
+                <span class="category">Teste</span>
+                <span class="ponto"></span>
+                </div>
+                <div class="down-content">
+                <span class="short">Testinho</span>
+                <h4>Testão</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+                <div class="thumb">
+                <a href="#"><img src="img/image1.jpg" alt=""></a>
+                <span class="category">Teste</span>
+                <span class="ponto"></span>
+                </div>
+                <div class="down-content">
+                <span class="short">Testinho</span>
+                <h4>Testão</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+                <div class="thumb">
+                <a href="#"><img src="img/image1.jpg" alt=""></a>
+                <span class="category">Teste</span>
+                <span class="ponto"></span>
+                </div>
+                <div class="down-content">
+                <span class="short">Testinho</span>
+                <h4>Testão</h4>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+                <div class="thumb">
+                <a href="#"><img src="img/image1.jpg" alt=""></a>
+                <span class="category">Teste</span>
+                <span class="ponto"></span>
+                </div>
+                <div class="down-content">
+                <span class="short">Testinho</span>
+                <h4>Testão</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- Rodapé Global --> 
     <?php 
