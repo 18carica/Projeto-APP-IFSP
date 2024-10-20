@@ -13,6 +13,46 @@
         body {
             font-family: 'Work Sans', sans-serif;
         }
+        main{
+            margin-top:40px;
+        }
+        .course-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        .course-table th, .course-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .course-table th {
+            background-color: #f2f2f2;
+            text-align: center; /* Centraliza o texto nos cabeçalhos */
+        }
+        .course-table td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .course-table td a:hover {
+            text-decoration: underline;
+        }
+        .course-table td {
+            vertical-align: top;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Ajustando o tamanho das colunas */
+        .course-table td:nth-child(1) {
+            width: 20%;
+        }
+        .course-table td:nth-child(2) {
+            width: 60%; /* Reduzindo o tamanho da descrição */
+        }
+        .course-table td:nth-child(3) {
+            width: 20%;
+            text-align: center; /* Centraliza o link na coluna PPC */
+        }
     </style>
 </head>
 <body>
@@ -67,8 +107,94 @@
 
     <!-- Conteúdo Principal -->
     <main>
-        <h1>Bem-vindo à Superiores</h1>
-        <p>Este é um exemplo de uma página com cabeçalho e rodapé globais.</p>
+        <h1>Cursos Superiores</h1>
+
+        <!-- Tabela de Cursos Técnicos -->
+        <table class="course-table">
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Descrição</th>
+                    <th>PPC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Licenciatura em Matemática</td>
+                    <td>
+                       <p> O curso de Licenciatura em Matemática do Câmpus Campos do Jordão do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP) tem como objetivo geral a formação inicial de profissionais para atuarem na docência em Matemática e na gestão dos processos pedagógicos inerentes às diferentes etapas e modalidades da Educação Básica.
+                      </p>
+                       <p> O curso é reconhecido pelo Ministério da Educação do Brasil (MEC) e seu conceito atual é 4, o que demonstra a excelência do curso. O corpo docente é composto por especialistas, mestres e doutores e a estrutura do curso possibilita ao(à) licenciando(a) a compreensão sobre a profissão docente desde os primeiros semestres e sobre o seu papel enquanto futuro(a) professor(a) que ensinará Matemática. Por outro lado, a Licenciatura em Matemática em Campos do Jordão foi avaliada com 4 estrelas pelo Guia da Faculdade Estadão no ano de 2023.
+                       </p>
+                       <p> O curso é gratuito e para acesso o estudante deverá ter concluído o Ensino Médio ou equivalente. O ingresso ao curso será por meio de processo de seleção regido por Edital a ser publicado anualmente. O Edital estabelecerá a distribuição das 40 vagas ofertadas no primeiro semestre de cada ano. Para mais informações acesse: <a href="https://processoseletivo.ifsp.edu.br/">https://processoseletivo.ifsp.edu.br</a>
+                       <p>
+                        <b>Carga horária do curso: </b> 3216,6 horas. <br>
+                        <b>Duração: </b> 4 anos – 8 semestres. <br>
+                        <b>Período: </b> Matutino.
+                       </p>
+
+                       </p>
+                    </td>
+                    <td>   
+                        <a href="https://drive.ifsp.edu.br/s/KdKfr5IXKFwOPkj" target="_blank">Ver PPC</a>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Licenciatura em Pedagogia</td>
+                    <td>
+                        <p>O curso de Licenciatura em Pedagogia permite ao egresso atuar em duas frentes de trabalho: docência e gestão escolar ou educacional, tanto em espaços escolares quanto em não escolares. Portanto, o pedagogo é tanto professor quanto especialista em educação.
+                        </p>
+                        <p>O pedagogo pode assumir os mais diferentes cargos, com as mais diferentes nomenclaturas e nas mais diversas instituições. Os cargos podem ser: professor da educação infantil; professor das séries iniciais; pedagogo; especialista em educação; analista educacional; gestor de projetos educacionais; técnico em assuntos educacionais; analista de recursos humanos; educador corporativo; entre outros.
+                        </p>
+                    </td>
+                    <td>
+                        <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/4248-ppc-licenciatura-em-pedagogia-ifsp-cjo-2023" target="_blank">Ver PPC</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tecnologia em Análise e Desenvolvimento de Sistemas</td>
+                    <td>
+                       <p> O tecnólogo em Análise e Desenvolvimento de Sistemas analisa, projeta, documenta, especifica, testa, implementa e mantém sistemas computacionais de informação.
+                      </p>
+                       <p> Este profissional trabalha, também, com ferramentas computacionais, equipamentos de informática e metodologia de projetos na produção de sistemas. Raciocínio lógico, emprego de linguagens de programação e de metodologias de construção de projetos, preocupação com a qualidade, usabilidade, robustez, integridade e segurança de programas computacionais são fundamentais à atuação desse profissional.
+                       </p>
+                       <p>
+                        <b>Carga horária do curso: </b> 2200 horas. <br>
+                        <b>Duração: </b> 3 anos – 6 semestres. <br>
+                        <b>Período: </b> Noturno.
+                       </p>
+                    </td>
+                    <td>   
+                        <a href="https://drive.ifsp.edu.br/s/M9SyG4eyxHJjsXa"_blank">Ver PPC</a>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Tecnologia em Gestão de Turismo</td>
+                    <td>
+                       <p> O Curso Superior de Tecnologia em Gestão de Turismo tem o propósito de formar profissionais para atuarem nos diversos setores do mercado turístico, com foco no microambiente local, na gestão cultural e ambiental, bem como na relação com os aspectos das políticas públicas, essencial para uma gestão eficiente do turismo.
+                      </p>
+                       <p> Os alunos egressos são capazes de diagnosticar o potencial turístico da região com ênfase nos aspectos culturais e ambientais, criar e implantar roteiros turísticos, planejar e gerenciar atividades relacionadas aos distintos segmentos de mercado do turismo.
+                       </p>
+                       <p> O profissional pode atuar em agências de turismo e transportadoras turísticas, meios de hospedagem, restaurantes e eventos, além de articular os diferentes agentes locais, regionais e internacionais da área e, vistoriar, avaliar e emitir parecer técnico em sua área de formação em empreendimentos próprios, órgãos públicos e organizações não governamentais.
+                       <p>
+                        <b>Carga horária do curso: </b> 2120 horas. <br>
+                        <b>Duração: </b> 5 semestres (2,5 anos)s. <br>
+                        <b>Período: </b> Noturno.
+                       </p>
+
+                       </p>
+                    </td>
+                    <td>   
+                        <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/2001-projeto-pedagogico-do-curso-ppc-turismo" target="_blank">Ver PPC</a>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <!-- Rodapé Global --> 
