@@ -1,4 +1,4 @@
 # Projeto-APP-IFSP
-Repositório para o conteúdo do projeto de extensão 2 do curso de analise e desenvolvimento de sistema
+O "IF na Mão" é um projeto de curricularização da extensão realizado pelos alunos do Instituto Federal de São Paulo - Campus Campos do Jordão. Seu principal objetivo é aproximar a comunidade local e regional do IFSP-CJO, oferecendo uma plataforma que divulga as oportunidades educacionais da Instituição de maneira acessível e interativa.
 
-Alunos: Matheus Lopes, João Paulo, Leandro Mocelin, Luigi Waschenshiky, Raisa Silva.
+Alunos: João Paulo, Leandro Mocelin, Luigi Waschenshiky, Matheus Lopes, Raisa Silva.
