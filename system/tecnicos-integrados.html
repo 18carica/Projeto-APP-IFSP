@@ -13,45 +13,74 @@
         body {
             font-family: 'Work Sans', sans-serif;
         }
-        main{
-            margin-top:40px;
-        }
-        .course-table {
+        .grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas:
+                "cabecalho cabecalho cabecalho"
+
+                "Informatica Informatica Informatica"
+                "inf-titulo-ppc inf-titulo-ppc inf-titulo-ppc"
+                "inf-texto inf-texto inf-texto"
+
+                "Edificacoes Edificacoes Edificacoes"
+                "edi-titulo-ppc edi-titulo-ppc edi-titulo-ppc"
+                "edi-texto edi-texto edi-texto";
             width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
+            margin: 40px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table th, .course-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        .cabecalho {
+            grid-area: cabecalho;
         }
-        .course-table th {
-            background-color: #f2f2f2;
-            text-align: center; /* Centraliza o texto nos cabeçalhos */
+        .Informatica {
+            grid-area: Informatica;
+            margin-top: 10px;
+            border: solid 3px;
+            border-color: #eb6565;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table td a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .course-table td a:hover {
-            text-decoration: underline;
-        }
-        .course-table td {
-            vertical-align: top;
-            text-align: justify;
-            justify-content: center;
+        .inf-titulo-ppc {
+            grid-area: inf-titulo-ppc;
+            display: flex;
             align-items: center;
+            justify-content: space-around; 
+            gap: 10px;
+            border-bottom: solid 3px;
+            border-radius: 10px;
+            border-color: #eb6565;
         }
-        /* Ajustando o tamanho das colunas */
-        .course-table td:nth-child(1) {
-            width: 20%;
+        .inf-texto {
+            grid-area: inf-texto;
+            text-align: justify;
+            padding: 10px;
         }
-        .course-table td:nth-child(2) {
-            width: 60%; /* Reduzindo o tamanho da descrição */
+        .Edificacoes {
+            grid-area: Edificacoes;
+            margin-top: 10px;
+            border: solid 3px;
+            border-color: #2f9041;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table td:nth-child(3) {
-            width: 20%;
-            text-align: center; /* Centraliza o link na coluna PPC */
+        .edi-titulo-ppc {
+            grid-area: edi-titulo-ppc;
+            display: flex;
+            align-items: center;
+            justify-content: space-around; 
+            gap: 10px;
+            border-bottom: solid 3px;
+            border-radius: 10px;
+            border-color: #2f9041;
+        }
+        .edi-texto {
+            grid-area: edi-texto;
+            text-align: justify;
+            padding: 10px;
         }
     </style>
 </head>
@@ -106,57 +135,43 @@
     </header>
 
     <!-- Conteúdo Principal -->
-     <main>
-        <h1>Técnicos Integrados</h1>
-
+    <main>
         <!-- Tabela de Cursos Técnicos -->
-        <table class="course-table">
-            <thead>
-                <tr>
-                    <th>Curso</th>
-                    <th>Descrição</th>
-                    <th>PPC</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Técnico em Informática Integrado ao Ensino Médio</td>
-                    <td>
-                       <p>O  curso  tem  como  objetivo  consolidar  e  aprofundar  os  conhecimentos adquiridos no Ensino Fundamental, estendendo o domínio de conhecimento para um nível  mais  aprimorado.  Sendo  o  curso  integrado  à  área  de  informática,  objetiva preparar  também  o  discente  para  o  universo  do  trabalho,  a  fim  de  que  possa desempenhar  de  forma  ética  seu  papel  como  técnico/cidadão,  atuando  no  campo escolhido,  sabendo  como  manipular  tecnologias  da  informação  e  da  comunicação (TICs).
-                       </p>
-                    </td>
-                    <td>
-                        <div>
-                            <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/3496-ppc-informatica-integrado-ao-ensino-medio-3-anos-ifsp-cjo" target="_blank">Ver PPC integrado ao ensino Médio - (3 ANOS)</a>
-                        </div>
-                        <div>
-                            <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/1130-ppc-tcnico-informtica" target="_blank">Ver PPC integrado ao ensino Médio - (4 ANOS)</a>
-                        </div>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td>Técnico em Edificações Integrado ao Ensino Médio</td>
-                    <td>
-                       <p> O curso tem como objetivo consolidar e aprofundar os conhecimentos adquiridos no Ensino Fundamental, estendendo o domínio de conhecimento para um nível mais aprimorado. Sendo integrado à área de Edificações, o curso objetiva, também, preparar o discente para o universo do trabalho.
-                        </p>
-                        <p>O Técnico em Edificações desenvolve e executa projetos de edificações conforme normas técnicas de segurança e de acordo com legislação específica. Planeja a execução e elabora o orçamento de obras; presta assistência técnica no estudo e desenvolvimento de projetos e pesquisas tecnológicas na área de edificações; orienta e coordena a execução de serviços de manutenção de equipamentos e de instalações em edificações; e orienta na assistência técnica para compra, venda e utilização de produtos e equipamentos especializados.
-                        </p>
-                        <p>O profissional pode atuar em instituições públicas, privadas e do terceiro setor, empresas de engenharia e de arquitetura, escritórios de projetos e construtoras.
-                        </p>
-                    </td>
-                    <td>
-                        <div>
-                            <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/3495-ppc-edificacoes-integrado-ao-ensino-medio-3-anos-ifsp-cjo" target="_blank">Ver PPC integrado ao ensino Médio - (3 ANOS)</a>
-                        </div>
-                        <div>
-                            <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/1572-ppc-tcnico-em-edificaes-integrado" target="_blank">Ver PPC integrado ao ensino Médio - (4 ANOS)</a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="grid">
+            <div class="cabecalho">
+                <h1>Técnicos Integrados</h1>
+            </div>
+
+            <div class="Informatica">
+                <div class="inf-titulo-ppc">
+                    <h3>Informática</h3>
+                    <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/3496-ppc-informatica-integrado-ao-ensino-medio-3-anos-ifsp-cjo" target="_blank">PPC (3 ANOS)</a>
+                    <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/1130-ppc-tcnico-informtica" target="_blank">PPC (4 ANOS)</a>
+                </div>
+                <div class="inf-texto">
+                    <p>O  curso  tem  como  objetivo  consolidar  e  aprofundar  os  conhecimentos adquiridos no Ensino Fundamental, estendendo o domínio de conhecimento para um nível  mais  aprimorado.  Sendo  o  curso  integrado  à  área  de  informática,  objetiva preparar  também  o  discente  para  o  universo  do  trabalho,  a  fim  de  que  possa desempenhar  de  forma  ética  seu  papel  como  técnico/cidadão,  atuando  no  campo escolhido,  sabendo  como  manipular  tecnologias  da  informação  e  da  comunicação (TICs).
+                    </p>
+                </div>
+            </div>
+
+            <div class="Edificacoes">
+                <div class="edi-titulo-ppc">
+                    <h3>Edificações</h3>
+                    <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/3495-ppc-edificacoes-integrado-ao-ensino-medio-3-anos-ifsp-cjo" target="_blank">PPC (3 ANOS)</a>
+                    <a href="https://www.ifspcjo.edu.br/component/phocadownload/file/1572-ppc-tcnico-em-edificaes-integrado" target="_blank">PPC (4 ANOS)</a>
+                </div>
+                <div class="edi-texto">
+                    <p>O curso tem como objetivo consolidar e aprofundar os conhecimentos adquiridos no Ensino Fundamental, estendendo o domínio de conhecimento para um nível mais aprimorado. Sendo integrado à área de Edificações, o curso objetiva, também, preparar o discente para o universo do trabalho.
+                    </p>
+                    <p>O Técnico em Edificações desenvolve e executa projetos de edificações conforme normas técnicas de segurança e de acordo com legislação específica. Planeja a execução e elabora o orçamento de obras; presta assistência técnica no estudo e desenvolvimento de projetos e pesquisas tecnológicas na área de edificações; orienta e coordena a execução de serviços de manutenção de equipamentos e de instalações em edificações; e orienta na assistência técnica para compra, venda e utilização de produtos e equipamentos especializados.
+                    </p>
+                    <p>O profissional pode atuar em instituições públicas, privadas e do terceiro setor, empresas de engenharia e de arquitetura, escritórios de projetos e construtoras.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <!-- Rodapé Global --> 
     <footer>
         <p>© 2024 IF na Mão - Todos os direitos reservados.</p>
