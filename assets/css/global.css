@@ -40,7 +40,8 @@ header {
 }
 
 .logo {
-    height: 80px;
+    height: 130px;
+    margin-right: -10px;
 }
 
 main {
