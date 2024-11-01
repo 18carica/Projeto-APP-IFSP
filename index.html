@@ -13,6 +13,9 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        .icones-index{
+            filter: invert(100%) brightness(200%);
+        }
     </style>
 </head>
 <body>
@@ -28,11 +31,10 @@
                     </div>  
                       
                     <div class='menu-items'>
-                        <li><a href='./index.php'>Home</a></li>
+                        <li><a href='./index.html'>Home</a></li>
                         <li><a href='./system/podcast.html'>Podcast</a></li>
-                        <li><a href='./system/historico.html'>Histórico</a></li>
+                        <li><a href='./system/historico.html'>História</a></li>
                         <li><a href='./system/campus.html'>Campus</a></li>
-                        <li><a href='./system/areas.html'>Áreas</a></li>
                         <li class='nossos-cursos'>
                             <a href='#'>Nossos Cursos</a>
                             <i href='#' class='chevron-link'>
@@ -60,22 +62,182 @@
                 </div>
             </div>
         </nav>
-        <div class='page-title'>If na mão</div>
-        <img src='img/Artboard 1 copy 2.png' alt='Logo' class='logo'>
+        <a href="index.html">
+            <img src='./img/logo-semfundo.png' alt='Logo' class='logo'>
+        </a>
     </header>   
 
     <!-- Conteúdo Principal -->
     <main>
-        <!-- Texto landing page (é assim que escreve? kkkkkk) -->
-        <div class="carousel-text">
-            <h2>Bem-vindo ao IF na Mão!</h2>
-            <a href="index2.html">
-                <button>Clique aqui para começar!</button>
-            </a>
+        
+        <!-- Carrossel de Imagens -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/fotosIF/predio1fora-8.JPG" alt="Imagem 1">
+                <img src="img/fotosIF/biblioteca-2.jpg" alt="Imagem 2">
+                <img src="img/fotosIF/labInformatica-1.JPG" alt="Imagem 3">
+                <img src="img/fotosIF/corredor-1.JPG" alt="Imagem 4">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+            <!-- Texto em cima do carrossel -->
+            <div class="carousel-text">
+                <h2>Bem-vindo ao IF na Mão!</h2>
+                <p>Aqui você poderá explorar cursos, história, e muito mais do IFSP de Campos do Jordão!</p>
+            </div>
+        </div>
+
+        <div class="services section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="icon">
+                                <img class="icones-index" src="./img/icones/homepage-icone.png" alt="web experts">
+                            </div>
+                            <div class="main-content">
+                                <h4>Página do Campus</h4>
+                                <p>Visite a página oficial do campus!</p>
+                                <div class="main-button">
+                                    <a href="https://www.ifspcjo.edu.br">Quero ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="icon">
+                                <img class="icones-index" src="./img/icones/historia-icone.png" alt="web experts">
+                            </div>
+                            <div class="main-content">
+                                <h4>História</h4>
+                                <p>Conheça a História do campus!</p>
+                                <div class="main-button">
+                                    <a href="./system/historico.html">Quero ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item">
+                            <div class="icon">
+                                <img class="icones-index" src="./img/icones/escola-icone.png" alt="web experts">
+                            </div>
+                            <div class="main-content">
+                                <h4>O Campus</h4>
+                                <p>Conheça o campus!</p>
+                                <div class="main-button">
+                                    <a href="./system/campus.html">Quero ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    
+    <section class="section-courses" id="courses" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <div class="section-heading">
+                        <h2>Confira os cursos disponíveis</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row event_box">
+                <div class="col-lg-6 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+                    <div class="events_item">
+                        <div class="thumb">
+                            <a href="./system/tecnicos.html"><img src="./img/fotosIF/predio1fora-5.JPG" alt=""></a>
+                            <span class="category">Quero Ver</span>
+                            <span class="ponto"></span>
+                        </div>
+                        <div class="down-content">
+                            <span class="short">Veja os cursos técnicos!</span>
+                            <h4>Técnicos</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+                    <div class="events_item">
+                        <div class="thumb">
+                            <a href="./system/tecnicos-integrados.html"><img src="./img/fotosIF/labInformatica-1.JPG" alt=""></a>
+                            <span class="category">Quero Ver</span>
+                            <span class="ponto"></span>
+                        </div>
+                        <div class="down-content">
+                            <span class="short">Veja os cursos técnicos integrados!</span>
+                            <h4>Técnicos Integrados</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+                    <div class="events_item">
+                        <div class="thumb">
+                            <a href="./system/superiores.html"><img src="./img/fotosIF/biblioteca-3.jpg" alt=""></a>
+                            <span class="category">Quero Ver</span>
+                            <span class="ponto"></span>
+                        </div>
+                        <div class="down-content">
+                            <span class="short">Veja os cursos superiores!</span>
+                            <h4>Superiores</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+                    <div class="events_item">
+                        <div class="thumb">
+                            <a href="./system/extensao.html"><img src="./img/fotosIF/labRobotica-2.jpeg" alt=""></a>
+                            <span class="category">Quero Ver</span>
+                            <span class="ponto"></span>
+                        </div>
+                        <div class="down-content">
+                            <span class="short">Veja os cursos de extensão!</span>
+                            <h4>Cursos de Extensão</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="services section" id="services">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img class="icones-index" src="./img/icones/podcast-icone.png" alt="web experts">
+                        </div>
+                        <div class="main-content">
+                            <h4>PodIF</h4>
+                            <p>Conheça o Podcast do IF!</p>
+                            <div class="main-button">
+                                <a href="./system/podcast.html">Quero ver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img class="icones-index" src="./img/icones/sobre-icone.png" alt="web experts">
+                        </div>
+                        <div class="main-content">
+                            <h4>Sobre o Aplicativo</h4>
+                            <p>Conheça a motivação por trás do aplicativo!</p>
+                            <div class="main-button">
+                                <a href="./system/sobre.html">Quero ver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Rodapé Global --> 
     <footer>

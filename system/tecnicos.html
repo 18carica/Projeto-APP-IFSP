@@ -13,42 +13,110 @@
         body {
             font-family: 'Work Sans', sans-serif;
         }
-        .course-table {
+        .grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas:
+                "cabecalho cabecalho cabecalho"
+
+                "Edificacoes Edificacoes Edificacoes"
+                "edi-titulo-ppc edi-titulo-ppc edi-titulo-ppc"
+                "edi-texto edi-texto edi-texto"
+
+                "Eventos Eventos Eventos"
+                "eve-titulo-ppc eve-titulo-ppc eve-titulo-ppc"
+                "eve-texto eve-texto eve-texto"
+
+                "Hospedagem Hospedagem Hospedagem"
+                "hos-titulo-ppc hos-titulo-ppc hos-titulo-ppc"
+                "hos-texto hos-texto hos-texto";
             width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
+            margin: 40px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table th, .course-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        /* 1 */
+        .cabecalho {
+            grid-area: cabecalho;
         }
-        .course-table th {
-            background-color: #f2f2f2;
-            text-align: center; /* Centraliza o texto nos cabeçalhos */
+        .lic-titulo {
+            grid-area: lic-titulo;
+            margin-top: 20px;
+            background-color: #eb6565;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table td a {
-            color: #007bff;
-            text-decoration: none;
+        .Edificacoes {
+            grid-area: Edificacoes;
+            margin-top: 10px;
+            border: solid 3px;
+            border-color: #eb6565;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table td a:hover {
-            text-decoration: underline;
-        }
-        .course-table td {
-            vertical-align: top;
-            text-align: justify;
-            justify-content: center;
+        .edi-titulo-ppc {
+            grid-area: edi-titulo-ppc;
+            display: flex;
             align-items: center;
+            justify-content: space-around; 
+            gap: 10px;
+            border-bottom: solid 3px;
+            border-radius: 10px;
+            border-color: #eb6565;
         }
-        /* Ajustando o tamanho das colunas */
-        .course-table td:nth-child(1) {
-            width: 20%;
+        .edi-texto {
+            grid-area: edi-texto;
+            text-align: justify;
+            padding: 10px;
         }
-        .course-table td:nth-child(2) {
-            width: 60%; /* Reduzindo o tamanho da descrição */
+        .Eventos {
+            grid-area: Eventos;
+            margin-top: 10px;
+            border: solid 3px;
+            border-color: #2f9041;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .course-table td:nth-child(3) {
-            width: 20%;
-            text-align: center; /* Centraliza o link na coluna PPC */
+        .eve-titulo-ppc {
+            grid-area: eve-titulo-ppc;
+            display: flex;
+            align-items: center;
+            justify-content: space-around; 
+            gap: 10px;
+            border-bottom: solid 3px;
+            border-radius: 10px;
+            border-color: #2f9041;
+        }
+        .eve-texto {
+            grid-area: eve-texto;
+            text-align: justify;
+            padding: 10px;
+        }
+        .Hospedagem {
+            grid-area: Hospedagem;
+            margin-top: 10px;
+            border: solid 3px;
+            border-color: #70b2ef;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hos-titulo-ppc {
+            grid-area: hos-titulo-ppc;
+            display: flex;
+            align-items: center;
+            justify-content: space-around; 
+            gap: 10px;
+            border-bottom: solid 3px;
+            border-radius: 10px;
+            border-color: #70b2ef;
+        }
+        .hos-texto {
+            grid-area: hos-texto;
+            text-align: justify;
+            padding: 10px;
         }
     </style>
 </head>
@@ -66,11 +134,10 @@
                     </div>  
                     
                     <div class='menu-items'>
-                        <li><a href='../index2.html'>Home</a></li>
+                        <li><a href='../index.html'>Home</a></li>
                         <li><a href='./podcast.html'>Podcast</a></li>
-                        <li><a href='./historico.html'>Histórico</a></li>
+                        <li><a href='./historico.html'>História</a></li>
                         <li><a href='./campus.html'>Campus</a></li>
-                        <li><a href='./areas.html'>Áreas</a></li>
                         <li class='nossos-cursos'>
                             <a href='#'>Nossos Cursos</a>
                             <i href='#' class='chevron-link'>
@@ -98,47 +165,52 @@
                 </div>
             </div>
         </nav>
-        <div class='page-title'>If na mão</div>
-        <img src='../img/Artboard 1 copy 2.png' alt='Logo' class='logo'>
+        <a href="../index.html">
+            <img src='../img/logo-semfundo.png' alt='Logo' class='logo'>
+        </a>
     </header>
 
     <!-- Conteúdo Principal -->
     <main>
-        <h1>Técnicos Concomitante ou Subsequentes</h1>
-
         <!-- Tabela de Cursos Técnicos -->
-        <table class="course-table">
-            <thead>
-                <tr>
-                    <th>Curso</th>
-                    <th>Descrição</th>
-                    <th>PPC</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Técnico em Edificações</td>
-                    <td>
-                        O Técnico em Edificações desenvolve e executa projetos de edificações conforme normas técnicas de segurança e de acordo com legislação específica. Planeja a execução e elabora o orçamento de obras; presta assistência técnica no estudo e desenvolvimento de projetos e pesquisas tecnológicas na área de edificações; orienta e coordena a execução de serviços de manutenção de equipamentos e de instalações em edificações; e orienta na assistência técnica para compra, venda e utilização de produtos e equipamentos especializados.
-                    </td>
-                    <td><a href="https://drive.ifsp.edu.br/s/ApCk3RsZ1AkgVIL" target="_blank">Ver PPC</a></td>
-                </tr>
-                <tr>
-                    <td>Técnico em Eventos</td>
-                    <td>
-                        O Técnico em Eventos auxilia na prospecção, planejamento, organização, coordenação e execução de serviços de apoio técnico e logístico de eventos e cerimoniais. Utiliza protocolo e etiqueta formal, realiza procedimentos administrativos e operacionais, recepciona e promove serviços de eventos, planeja ornamentos decorativos, e coordena armazenamento e manuseio de gêneros alimentícios servidos em eventos.
-                    </td>
-                    <td><a href="https://drive.ifsp.edu.br/s/FRBzlpR7nXQvVt4" target="_blank">Ver PPC</a></td>
-                </tr>
-                <tr>
-                    <td>Técnico em Hospedagem</td>
-                    <td>
-                        O Técnico em Hospedagem atua na recepção e governança em meios de hospedagem, além de hospitais, navios, trens, embarcações e shoppings. Executa atividades de recepção, atendimento ao cliente, serviços de andares, atendimento comercial e implementação de critérios de qualidade na prestação de serviços, prestando suporte ao hóspede durante sua estada.
-                    </td>
-                    <td><a href="https://drive.ifsp.edu.br/s/MzBY93sBWRLD7Ck" target="_blank">Ver PPC</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="grid">
+            <div class="cabecalho">
+                <h1>Técnicos Concomitante ou Subsequentes</h1>
+            </div>
+
+            <div class="Edificacoes">
+                <div class="edi-titulo-ppc">
+                    <h3>Edificações</h3> 
+                    <a href="https://drive.ifsp.edu.br/s/ApCk3RsZ1AkgVIL" target="_blank">Ver PPC</a>
+                </div>
+                <div class="edi-texto">
+                    <p>O Técnico em Edificações desenvolve e executa projetos de edificações conforme normas técnicas de segurança e de acordo com legislação específica. Planeja a execução e elabora o orçamento de obras; presta assistência técnica no estudo e desenvolvimento de projetos e pesquisas tecnológicas na área de edificações; orienta e coordena a execução de serviços de manutenção de equipamentos e de instalações em edificações; e orienta na assistência técnica para compra, venda e utilização de produtos e equipamentos especializados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Eventos">
+                <div class="eve-titulo-ppc">
+                    <h3>Eventos</h3>
+                    <a href="https://drive.ifsp.edu.br/s/FRBzlpR7nXQvVt4" target="_blank">Ver PPC</a>
+                </div>
+                <div class="eve-texto">
+                    <p>O Técnico em Eventos auxilia na prospecção, planejamento, organização, coordenação e execução de serviços de apoio técnico e logístico de eventos e cerimoniais. Utiliza protocolo e etiqueta formal, realiza procedimentos administrativos e operacionais, recepciona e promove serviços de eventos, planeja ornamentos decorativos, e coordena armazenamento e manuseio de gêneros alimentícios servidos em eventos.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="Hospedagem">
+                <div class="hos-titulo-ppc">
+                    <h3>Hospedagem</h3>
+                    <a href="https://drive.ifsp.edu.br/s/MzBY93sBWRLD7Ck" target="_blank">Ver PPC</a>
+                </div>
+                <div class="hos-texto">
+                    <p>O Técnico em Hospedagem atua na recepção e governança em meios de hospedagem, além de hospitais, navios, trens, embarcações e shoppings. Executa atividades de recepção, atendimento ao cliente, serviços de andares, atendimento comercial e implementação de critérios de qualidade na prestação de serviços, prestando suporte ao hóspede durante sua estada.      
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Rodapé Global --> 

@@ -13,6 +13,50 @@
         body {
             font-family: 'Work Sans', sans-serif;
         }
+        .content {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .nome{
+            text-align: left;
+            display: grid;
+            margin: 10px;
+        }
+        .alunos {
+            padding: 2px;
+            text-align: center;
+            color: #198754;
+            text-decoration: none;
+        }
+        .professor {
+            padding: 2px;
+            text-align: center;
+            color: #198754;
+            text-decoration: none;
+        }
+        .beneficios{
+            list-style-type: disc;
+            text-align: left;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content h1, .content h2, .content h3 {
+            text-align: center;
+        }
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -29,11 +73,10 @@
                     </div>  
                         
                     <div class='menu-items'>
-                        <li><a href='../index2.html'>Home</a></li>
+                        <li><a href='../index.html'>Home</a></li>
                         <li><a href='./podcast.html'>Podcast</a></li>
-                        <li><a href='./historico.html'>Histórico</a></li>
+                        <li><a href='./historico.html'>História</a></li>
                         <li><a href='./campus.html'>Campus</a></li>
-                        <li><a href='./areas.html'>Áreas</a></li>
                         <li class='nossos-cursos'>
                             <a href='#'>Nossos Cursos</a>
                             <i href='#' class='chevron-link'>
@@ -61,14 +104,59 @@
                 </div>
             </div>
         </nav>
-        <div class='page-title'>If na Mão</div>
-        <img src='../img/Artboard 1 copy 2.png' alt='Logo' class='logo'>
+        <a href="../index.html">
+            <img src='../img/logo-semfundo.png' alt='Logo' class='logo'>
+        </a>
     </header>
 
     <!-- Conteúdo Principal -->
     <main>
-        <h1>Bem-vindo à Sobre</h1>
-        <p>Este é um exemplo de uma página com cabeçalho e rodapé globais.</p>
+        <div class="content">
+            <h1>Sobre o Projeto</h1>
+            <p>O "IF na Mão" é um projeto de curricularização da extensão realizado pelos alunos do Instituto Federal de São Paulo - Campus Campos do Jordão. Seu principal objetivo é aproximar a comunidade local e regional do IFSP-CJO, oferecendo uma plataforma que divulga as oportunidades educacionais da Instituição de maneira acessível e interativa.</p>
+
+            <h2>Equipe</h2>
+            <div class="nome">
+                <a class="alunos" href="https://www.linkedin.com/in/joão-paulo-homem-de-melo-bogo-ribeiro-48371226a/">
+                    João Paulo Homem de Melo Bogo Ribeiro <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="alunos" href="https://www.linkedin.com/in/mocelin-leandro/">
+                    Leandro Torres Mocelin <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="alunos" href="https://www.linkedin.com/in/luigi-w-luz/">
+                    Luigi Waschenshiky Luz <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="alunos" href="https://www.linkedin.com/in/matheus-lopes-de-oliveira-a01288258/">
+                    Matheus Lopes de Oliveira <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="alunos" href="https://www.linkedin.com/in/raisasilva1705/">
+                    Raisa Priscila da Silva <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+
+            <h2>Professor Orientador</h2>
+            <div class="nome">
+                <a class="professor" href="http://lattes.cnpq.br/5756986456695847">
+                    Dr. Josivan Pereira da Silva <i class="bi bi-mortarboard-fill"></i>
+                </a>
+            </div>
+
+            <h2>Objetivo do Projeto</h2>
+            <p>Este projeto de extensão visa enfrentar a falta de visibilidade do IFSP-CJO na comunidade de Campos do Jordão e cidades vizinhas. Mesmo após uma década de existência, ainda há um desconhecimento significativo sobre os cursos e oportunidades oferecidos pela Instituição.</p>
+            <p>Através da criação de um ecossistema de divulgação e relacionamento, o "IF na Mão" busca aumentar o reconhecimento da Instituição, promover capacitações e atividades interativas com a comunidade externa, e aproximar potenciais alunos dos cursos técnicos e superiores oferecidos pelo IFSP-CJO.</p>
+
+            <h2>Benefícios Esperados</h2>
+            <p>Com a execução desse projeto, esperamos:</p>
+            <ul class="beneficios">
+                <li>Fortalecer a presença e imagem do IFSP-CJO na comunidade;</li>
+                <li>Aumentar a procura pelos cursos da Instituição;</li>
+                <li>Contribuir para o preenchimento de vagas em todos os níveis de ensino;</li>
+                <li>Estabelecer uma relação de confiança com a comunidade local, especialmente com alunos do ensino fundamental, promovendo o ingresso deles no IFSP-CJO.</li>
+            </ul>
+
+            <h2>Impacto na Comunidade</h2>
+            <p>O projeto terá impacto a curto, médio e longo prazo, criando um ciclo virtuoso de divulgação, reconhecimento e fortalecimento do IFSP-CJO. Através de ações estratégicas contínuas, pretendemos transformar o relacionamento da Instituição com a comunidade e aumentar significativamente a demanda por seus cursos.</p>
+        </div>
     </main>
 
     <!-- Rodapé Global --> 

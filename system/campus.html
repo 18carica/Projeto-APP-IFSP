@@ -13,6 +13,29 @@
         body {
             font-family: 'Work Sans', sans-serif;
         }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .content h1{
+            text-align: center;
+        }
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .campus-img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -29,11 +52,10 @@
                     </div>  
                         
                     <div class='menu-items'>
-                        <li><a href='../index2.html'>Home</a></li>
+                        <li><a href='../index.html'>Home</a></li>
                         <li><a href='./podcast.html'>Podcast</a></li>
-                        <li><a href='./historico.html'>Histórico</a></li>
+                        <li><a href='./historico.html'>História</a></li>
                         <li><a href='./campus.html'>Campus</a></li>
-                        <li><a href='./areas.html'>Áreas</a></li>
                         <li class='nossos-cursos'>
                             <a href='#'>Nossos Cursos</a>
                             <i href='#' class='chevron-link'>
@@ -61,14 +83,31 @@
                 </div>
             </div>
         </nav>
-        <div class='page-title'>If na Mão</div>
-        <img src='../img/Artboard 1 copy 2.png' alt='Logo' class='logo'>
+        <a href="../index.html">
+            <img src='../img/logo-semfundo.png' alt='Logo' class='logo'>
+        </a>
     </header>
 
     <!-- Conteúdo Principal -->
     <main>
-        <h1>Bem-vindo à Página O Campus</h1>
-        <p>Este é um exemplo de uma página com cabeçalho e rodapé globais.</p>
+        <div class="content">
+            <h1>O Campus</h1>
+            <div class='campus-content'>
+                <p>O Campus Campos do Jordão do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo foi inaugurado, no município de Campos do Jordão, em 2 de fevereiro de 2009. Começou com dois cursos técnicos em Edificações e Informática. As inscrições foram realizadas no Hotel Satélite, pois o campus ainda encontrava-se em construção. Havia apenas quatro salas disponíveis. Iniciou suas atividades com duas turmas em cada curso, sendo duas no período matutino e duas no período noturno. Em julho de 2009, a construção foi finalizada. O câmpus possuía seis técnico-administrativos, seis docentes e 160 alunos.</p>
+
+                <p>Em 2012, tiveram início dois cursos superiores: Licenciatura em Matemática e Tecnologia em Análise e Desenvolvimento de Sistemas.</p>
+
+                <p>Em abril de 2012, o IFSP - em parceria entre a Prefeitura Municipal de Campos do Jordão e a Reitoria - firma o contrato de concessão de direito real de uso, onde o Centro Gastronômico Doutor Franklin Alckmin Bueno Maia incorpora-se ao Campus Campos do Jordão, para dar início a cursos nas áreas de gastronomia, hotelaria, turismo e lazer.</p>
+
+                <p>Em 2015, iniciou-se o curso técnico em Eventos e, em 2016, os cursos técnicos em Hospedagem e em Informática integrado ao Ensino Médio.</p>
+
+                <p>Em 2017, dois novos cursos iniciaram: curso técnico em Edificações integrado ao Ensino Médio e Licenciatura em Pedagogia. Em 2018, houve a abertura do curso superior de Tecnologia em Gestão de Turismo.</p>
+
+                <p>O campus oferta também cursos de Formação Inicial e Continuada (FICs), eventos e ações de ensino, pesquisa e extensão.</p>
+
+                <img src="../img/fotosIF/predio1fora-8.JPG" alt="Foto do Campus Campos do Jordão" class="campus-img">
+            </div>
+        </div>
     </main>
 
     <!-- Rodapé Global --> 
