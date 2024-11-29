@@ -25,13 +25,8 @@ O aplicativo **IF na Mão** foi projetado para:
 
 ## 📲 **Como Baixar e Instalar o Aplicativo**  
 
-Existem duas formas de obter o aplicativo:  
-
-1. **Instalação via Link**  
-   - Acesse o link: [**Instalar via Kodular**](https://kodular.app/HMJ-OYE).  
-   - Siga as instruções para download e instalação do aplicativo diretamente em seu dispositivo.  
-
-2. **Download do Arquivo APK**  
+1. **Download do Arquivo APK**  
+   
    - Baixe o arquivo **`ifspcjo.apk`** disponível na pasta [**Install**](./Install/ifspcjo.apk).  
    - Após o download, siga os passos abaixo para instalar:  
      1. No dispositivo Android, acesse as **Configurações** > **Segurança** e ative a opção "Fontes desconhecidas".  
